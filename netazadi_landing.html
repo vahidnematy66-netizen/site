@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Net Azadi | فروش VPN پرسرعت</title>
+  <meta name="description" content="خرید VPN پرسرعت با پشتیبانی سریع، پرداخت با تتر BEP20 و تحویل از طریق ربات تلگرام." />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --bg2:#121933;
+      --card:#161f3d;
+      --text:#f4f7ff;
+      --muted:#b8c0db;
+      --line:rgba(255,255,255,.08);
+      --accent:#6ea8ff;
+      --accent2:#7ef0c5;
+      --danger:#ffcf70;
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Tahoma",sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(110,168,255,.18), transparent 30%),
+        radial-gradient(circle at top left, rgba(126,240,197,.12), transparent 28%),
+        linear-gradient(180deg,var(--bg),#0a0f1d 50%, #09101d);
+      color:var(--text);
+      line-height:1.8;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    .nav{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(14px);
+      background:rgba(11,16,32,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:16px;padding:14px 0;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.1rem
+    }
+    .brand-badge{
+      width:40px;height:40px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:grid;place-items:center;color:#08111f;font-weight:900;
+      box-shadow:var(--shadow)
+    }
+    .nav-links{display:flex;gap:18px;color:var(--muted);font-size:.95rem}
+    .nav-actions{display:flex;gap:10px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:13px 18px;border-radius:16px;border:1px solid var(--line);
+      transition:.2s ease;cursor:pointer;font-weight:700
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--accent),#8ac2ff);
+      color:#08111f;border:none
+    }
+    .btn-secondary{
+      background:rgba(255,255,255,.03);color:var(--text)
+    }
+    .hero{padding:72px 0 36px}
+    .hero-grid{
+      display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center
+    }
+    .hero-card{
+      background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
+      border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px
+    }
+    .eyebrow{
+      display:inline-flex;gap:8px;align-items:center;
+      color:var(--accent2);background:rgba(126,240,197,.08);
+      border:1px solid rgba(126,240,197,.18);
+      padding:8px 12px;border-radius:999px;font-size:.9rem;font-weight:700
+    }
+    h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1.2;margin:18px 0 14px}
+    .lead{color:var(--muted);font-size:1.05rem;max-width:56ch}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+    .hero-points{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px
+    }
+    .mini{
+      padding:16px;border-radius:18px;background:rgba(255,255,255,.03);
+      border:1px solid var(--line);text-align:center
+    }
+    .mini strong{display:block;font-size:1.1rem;margin-bottom:4px}
+    .side-top{
+      display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px
+    }
+    .status{
+      padding:8px 12px;border-radius:999px;
+      background:rgba(126,240,197,.12);color:var(--accent2);
+      border:1px solid rgba(126,240,197,.2);font-size:.9rem;font-weight:700
+    }
+    .mock{
+      background:#0c1328;border:1px solid var(--line);border-radius:22px;padding:18px
+    }
+    .chat{
+      background:linear-gradient(180deg,#121a35,#0d1430);
+      border:1px solid var(--line);border-radius:20px;padding:16px
+    }
+    .bubble{
+      max-width:88%;padding:12px 14px;border-radius:16px;margin:8px 0;font-size:.96rem
+    }
+    .me{background:#20315d;margin-right:auto}
+    .bot{background:#12213f;border:1px solid var(--line);margin-left:auto}
+    .kbd{
+      display:flex;gap:10px;flex-wrap:wrap;margin-top:12px
+    }
+    .chip{
+      padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:.9rem
+    }
+    section{padding:34px 0}
+    .section-title{font-size:1.8rem;margin:0 0 10px}
+    .section-sub{color:var(--muted);margin:0 0 22px}
+    .grid-3{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px
+    }
+    .card{
+      padding:22px;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.025));
+      border:1px solid var(--line);box-shadow:var(--shadow)
+    }
+    .card h3{margin-top:0}
+    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .plan{
+      position:relative;padding:24px;border-radius:24px;background:linear-gradient(180deg,#141d39,#101732);
+      border:1px solid var(--line);box-shadow:var(--shadow)
+    }
+    .plan.featured{outline:2px solid rgba(110,168,255,.35);transform:translateY(-4px)}
+    .tag{
+      position:absolute;top:14px;left:14px;background:rgba(110,168,255,.14);
+      color:#b8d4ff;border:1px solid rgba(110,168,255,.25);
+      padding:7px 10px;border-radius:999px;font-size:.8rem;font-weight:800
+    }
+    .plan-name{font-size:1.25rem;font-weight:800}
+    .price{font-size:2rem;font-weight:900;margin:8px 0}
+    .plan ul{padding:0;margin:16px 0 20px;list-style:none;color:var(--muted)}
+    .plan li{margin:8px 0}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step-num{
+      width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));color:#08111f;font-weight:900;margin-bottom:12px
+    }
+    .pay-box{
+      display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;
+      padding:18px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--line)
+    }
+    .wallet{
+      word-break:break-all;background:#0d1430;border:1px dashed rgba(255,255,255,.16);
+      border-radius:16px;padding:14px;color:#dce6ff
+    }
+    .notice{
+      margin-top:14px;color:var(--danger);font-size:.95rem
+    }
+    .cta{
+      padding:28px;border-radius:28px;
+      background:linear-gradient(135deg,rgba(110,168,255,.14),rgba(126,240,197,.08));
+      border:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center
+    }
+    footer{
+      padding:26px 0 48px;color:var(--muted);font-size:.92rem
+    }
+    .footer-box{
+      display:flex;justify-content:space-between;gap:16px;align-items:center;
+      border-top:1px solid var(--line);padding-top:20px
+    }
+    .copy-btn{
+      white-space:nowrap
+    }
+    @media (max-width: 920px){
+      .hero-grid,.grid-3,.plans,.steps{grid-template-columns:1fr}
+      .hero-points{grid-template-columns:1fr}
+      .nav-links{display:none}
+      .cta,.footer-box,.pay-box{display:grid;grid-template-columns:1fr}
+      .nav-inner{align-items:flex-start}
+      .nav-actions{width:100%}
+      .nav-actions .btn{flex:1}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-badge">N</div>
+        <div>
+          <div>Net Azadi</div>
+          <div style="font-size:.82rem;color:var(--muted);font-weight:600">VPN پرسرعت و پشتیبانی سریع</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#plans">پلن‌ها</a>
+        <a href="#how">نحوه خرید</a>
+        <a href="#payment">پرداخت</a>
+        <a href="#contact">ارتباط</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="#payment">پرداخت با تتر</a>
+        <a class="btn btn-primary" href="https://t.me/netazadi_bot" target="_blank" rel="noopener">ورود به ربات</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <div class="hero-grid">
+      <div class="hero-card">
+        <div class="eyebrow">⚡ فروش مستقیم از طریق ربات تلگرام</div>
+        <h1>خرید VPN پرسرعت، ساده و سریع</h1>
+        <p class="lead">
+          پلن موردنظرت را انتخاب کن، پرداخت را با تتر روی شبکه BEP20 انجام بده و سفارش را از طریق ربات ثبت کن.
+          پشتیبانی و پیگیری سفارش هم مستقیم از داخل ربات انجام می‌شود.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://t.me/netazadi_bot" target="_blank" rel="noopener">خرید از ربات</a>
+          <a class="btn btn-secondary" href="#plans">دیدن پلن‌ها</a>
+        </div>
+        <div class="hero-points">
+          <div class="mini">
+            <strong>تحویل سریع</strong>
+            ثبت سفارش و پیگیری مستقیم
+          </div>
+          <div class="mini">
+            <strong>پرداخت با تتر</strong>
+            شبکه BEP20
+          </div>
+          <div class="mini">
+            <strong>پشتیبانی</strong>
+            پاسخ‌گویی از طریق ربات
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="side-top">
+          <strong>نمونه روند خرید</strong>
+          <span class="status">آنلاین</span>
+        </div>
+        <div class="mock">
+          <div class="chat">
+            <div class="bubble bot">سلام 👋 به ربات فروش VPN خوش اومدی.</div>
+            <div class="bubble me">📦 پلن‌ها</div>
+            <div class="bubble bot">پلن موردنظر را انتخاب کن.</div>
+            <div class="kbd">
+              <div class="chip">5GB - 19$</div>
+              <div class="chip">10GB - 33$</div>
+              <div class="chip">20GB - 55$</div>
+            </div>
+            <div class="bubble me">20GB - 55$</div>
+            <div class="bubble bot">هش تراکنش را بفرست، بعد عکس فیش را ارسال کن.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2 class="section-title">چرا Net Azadi؟</h2>
+    <p class="section-sub">ساخته شده برای خرید راحت، پشتیبانی سریع و ثبت سفارش بدون پیچیدگی.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>سفارش ساده</h3>
+        <p>همه مراحل خرید از داخل ربات انجام می‌شود و لازم نیست بین چند صفحه جابه‌جا شوی.</p>
+      </div>
+      <div class="card">
+        <h3>پیگیری راحت</h3>
+        <p>بعد از ارسال هش تراکنش و فیش، سفارش برای بررسی ثبت می‌شود و نتیجه از همان ربات اعلام می‌شود.</p>
+      </div>
+      <div class="card">
+        <h3>پرداخت شفاف</h3>
+        <p>پرداخت فقط با تتر روی شبکه BEP20 انجام می‌شود و آدرس ولت به‌صورت واضح در دسترس است.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="plans">
+    <h2 class="section-title">پلن‌ها</h2>
+    <p class="section-sub">سه پلن اصلی برای شروع و استفاده روزمره.</p>
+    <div class="plans">
+      <div class="plan">
+        <div class="plan-name">پلن 5 گیگ</div>
+        <div class="price">19$</div>
+        <ul>
+          <li>مناسب استفاده سبک</li>
+          <li>ثبت سفارش از طریق ربات</li>
+          <li>پرداخت با تتر BEP20</li>
+        </ul>
+        <a class="btn btn-primary" href="https://t.me/netazadi_bot" target="_blank" rel="noopener">خرید این پلن</a>
+      </div>
+
+      <div class="plan featured">
+        <div class="tag">پیشنهادی</div>
+        <div class="plan-name">پلن 10 گیگ</div>
+        <div class="price">33$</div>
+        <ul>
+          <li>مناسب استفاده متوسط</li>
+          <li>ثبت سفارش سریع در ربات</li>
+          <li>پشتیبانی و پیگیری راحت</li>
+        </ul>
+        <a class="btn btn-primary" href="https://t.me/netazadi_bot" target="_blank" rel="noopener">خرید این پلن</a>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">پلن 20 گیگ</div>
+        <div class="price">55$</div>
+        <ul>
+          <li>مناسب استفاده بیشتر</li>
+          <li>ثبت و بررسی سفارش</li>
+          <li>دریافت پاسخ از طریق ربات</li>
+        </ul>
+        <a class="btn btn-primary" href="https://t.me/netazadi_bot" target="_blank" rel="noopener">خرید این پلن</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="how">
+    <h2 class="section-title">نحوه خرید</h2>
+    <p class="section-sub">روند خرید خیلی کوتاه و مشخص است.</p>
+    <div class="steps">
+      <div class="card">
+        <div class="step-num">1</div>
+        <strong>ورود به ربات</strong>
+        <p>روی دکمه ورود به ربات بزن و /start را ارسال کن.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">2</div>
+        <strong>انتخاب پلن</strong>
+        <p>از بین پلن‌های موجود، گزینه مناسب را انتخاب کن.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">3</div>
+        <strong>پرداخت با تتر</strong>
+        <p>مبلغ پلن را با USDT روی شبکه BEP20 واریز کن.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">4</div>
+        <strong>ارسال هش و فیش</strong>
+        <p>هش تراکنش و عکس فیش را در ربات بفرست تا بررسی شود.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="payment">
+    <h2 class="section-title">پرداخت با تتر (BEP20)</h2>
+    <p class="section-sub">فقط پرداخت روی شبکه BEP20 انجام شود.</p>
+
+    <div class="card">
+      <div class="pay-box">
+        <div>
+          <strong>آدرس ولت شخصی</strong>
+          <div class="wallet" id="wallet">0x53ed8e2548924B8B20037BBB33098aba7b89bE0D</div>
+          <div class="notice">قبل از واریز، شبکه را روی <strong>BEP20</strong> تنظیم کن. بعد از پرداخت، هش تراکنش و عکس فیش را در ربات ارسال کن.</div>
+        </div>
+        <div>
+          <button class="btn btn-primary copy-btn" onclick="copyWallet()">کپی آدرس ولت</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <div class="cta">
+      <div>
+        <h2 style="margin:0 0 10px">آماده خریدی؟</h2>
+        <p style="margin:0;color:var(--muted)">برای انتخاب پلن، ثبت سفارش، پشتیبانی و پیگیری مستقیم وارد ربات شو.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://t.me/netazadi_bot" target="_blank" rel="noopener">ورود به @netazadi_bot</a>
+        <a class="btn btn-secondary" href="#plans">مشاهده پلن‌ها</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-box">
+      <div>© Net Azadi — فروش VPN از طریق ربات تلگرام</div>
+      <div>پرداخت: USDT (BEP20)</div>
+    </div>
+  </footer>
+
+  <script>
+    function copyWallet() {
+      const wallet = document.getElementById('wallet').innerText.trim();
+      navigator.clipboard.writeText(wallet).then(() => {
+        alert('آدرس ولت کپی شد.');
+      }).catch(() => {
+        alert('کپی انجام نشد. دستی کپی کن.');
+      });
+    }
+  </script>
+</body>
+</html>
